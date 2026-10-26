@@ -4,7 +4,7 @@ import { INITIAL_RENTAL_ORDERS, INITIAL_GEAR_INVENTORY, INITIAL_CUSTOMERS, INITI
 export const DEFAULT_CASHIERS: CashierUser[] = [
   {
     id: 'cashier-admin',
-    name: 'Admin Toko',
+    name: 'Admin',
     role: 'Admin Toko',
     pin: '1234',
     avatarColor: 'amber',
@@ -13,7 +13,7 @@ export const DEFAULT_CASHIERS: CashierUser[] = [
   },
   {
     id: 'cashier-utama',
-    name: 'Kasir Utama',
+    name: 'Kasir',
     role: 'Kasir Utama',
     pin: '1234',
     avatarColor: 'emerald',
@@ -100,8 +100,8 @@ export function getCachedShift(): CashierShift {
     const data = localStorage.getItem(STORAGE_KEYS.SHIFT);
     if (!data) return INITIAL_SHIFT;
     const shift = JSON.parse(data) as CashierShift;
-    if (shift.cashierName !== 'Admin Toko' && shift.cashierName !== 'Kasir Utama') {
-      shift.cashierName = 'Kasir Utama';
+    if (shift.cashierName !== 'Admin' && shift.cashierName !== 'Kasir') {
+      shift.cashierName = 'Kasir';
       saveCachedShift(shift);
     }
     return shift;
@@ -216,9 +216,9 @@ export function saveCachedActiveCashierId(id: string): void {
 export function getCachedLoginStatus(): boolean {
   try {
     const status = localStorage.getItem(STORAGE_KEYS.IS_LOGGED_IN);
-    return status === null ? true : status === 'true';
+    return status === 'true';
   } catch {
-    return true;
+    return false;
   }
 }
 

@@ -941,7 +941,7 @@ export const INITIAL_RENTAL_ORDERS: RentalOrder[] = [];
 
 // Uang keluar dan masuk kasir direset / dinolkan
 export const INITIAL_SHIFT: CashierShift = {
-  cashierName: 'Kasir Utama',
+  cashierName: 'Kasir',
   shiftName: 'Shift 1',
   shiftHours: '08:00 - 16:00',
   openingCash: 0, // Kas modal awal di laci 0
