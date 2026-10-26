@@ -14,9 +14,9 @@ export default defineConfig(() => {
         includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg'],
         manifest: {
           id: '/',
-          name: 'CampGear POS - Kasir Sewa Alat Gunung',
-          short_name: 'CampGearPOS',
-          description: 'Aplikasi kasir sewa peralatan gunung outdoor, manajemen stok & inventori real-time.',
+          name: 'AFK.OUTDOOR - Kasir Sewa Alat Gunung',
+          short_name: 'AFK.OUTDOOR',
+          description: 'Aplikasi kasir sewa peralatan gunung outdoor AFK.OUTDOOR, manajemen stok & inventori real-time.',
           theme_color: '#0f172a',
           background_color: '#0f172a',
           display: 'standalone',

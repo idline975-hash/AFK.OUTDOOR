@@ -34,7 +34,7 @@ export interface StoreSettings {
 }
 
 export const DEFAULT_STORE_SETTINGS: StoreSettings = {
-  storeName: 'CampGear Outdoor Rental',
+  storeName: 'AFK.OUTDOOR Rental',
   storeTagline: 'Penyewaan Alat Gunung & Outdoor Terlengkap',
   storeAddress: 'Jl. Kaliurang KM 9, Sleman, Yogyakarta',
   storePhone: '0812-3456-7890',
@@ -105,7 +105,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
 
   const handleExportData = () => {
     const backupData = {
-      appName: 'CampGear POS',
+      appName: 'AFK.OUTDOOR',
       exportDate: new Date().toISOString(),
       ordersCount: orders.length,
       inventoryCount: inventory.length,

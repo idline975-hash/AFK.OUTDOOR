@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Smartphone, Monitor, Mountain, Plus } from 'lucide-react';
+import { Menu, Smartphone, Monitor, Plus } from 'lucide-react';
 import { CashierShift } from '../types';
 import { NetworkStatusIndicator } from './NetworkStatusIndicator';
 import { ScaleSelector, UiScaleOption } from './ScaleSelector';
@@ -54,12 +54,13 @@ export const TopBar: React.FC<TopBarProps> = ({
           </button>
 
           <div className="flex items-center gap-1.5 shrink-0">
-            <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-lg bg-gradient-to-tr from-blue-700 via-blue-600 to-indigo-500 text-white flex items-center justify-center shadow-xs shrink-0 ring-1 ring-white/50">
-              <Mountain className="w-3.5 h-3.5" />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="AFK.OUTDOOR Logo" 
+              className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl object-cover shadow-xs shrink-0 ring-1 ring-emerald-500/50" 
+            />
             <span className="font-black text-slate-900 text-xs sm:text-sm tracking-tight whitespace-nowrap">
-              CampGear
-              <span className="hidden sm:inline text-slate-400 font-bold ml-1">POS</span>
+              AFK.OUTDOOR
             </span>
           </div>
         </div>
